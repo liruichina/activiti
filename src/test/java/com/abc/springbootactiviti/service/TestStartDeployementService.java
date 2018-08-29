@@ -28,8 +28,44 @@ public class TestStartDeployementService {
     	String processDefinitionKey ="";
         processDefinitionKey = "jianguanyi3";
         Map<String, Object> variables= Maps.newHashMap();
-        variables.put("user1list",Lists.newArrayList("user05","muser02","group3"));
-    	StartDeployementService.startProcessInstance(processDefinitionKey);;
+        variables.put("userlist",Lists.newArrayList("user05","muser02","group0"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser03","group1"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser04","group2"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser15","group3"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser02","group3"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser03","group3"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser04","group2"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser15","group0"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser02","group3"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser03","group2"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser04","group1"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser15","group0"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
+    	
+        variables.put("userlist",Lists.newArrayList("user05","muser02","group3"));
+    	StartDeployementService.startProcessInstance(processDefinitionKey,variables);
     }
 	
 }

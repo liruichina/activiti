@@ -33,7 +33,7 @@ public class StartDeployementDemo {
         //带有参数的启动
         String processDefinitionKey = "jianguanyi2";
         processDefinitionKey = "jianguanyi3";
-        variables.put("user1list",Lists.newArrayList("user05","muser02","group3"));
+        variables.put("userlist",Lists.newArrayList("user05","muser02","group3"));
 
         sd.startProcessInstance(processDefinitionKey,variables);
 //        sd.startProcessInstance("leave_houxuan");

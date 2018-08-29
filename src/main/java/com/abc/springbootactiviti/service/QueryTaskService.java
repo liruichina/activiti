@@ -5,7 +5,9 @@ import org.activiti.engine.history.HistoricActivityInstance;
 import org.activiti.engine.task.Task;
 
 import java.util.List;
-import java.util.Map;
+
+
+
 
 public interface QueryTaskService {
 
@@ -24,6 +26,22 @@ public interface QueryTaskService {
 	 * @return
 	 */
 	public List<Task> queryCandidatePengingTasksByUserId(String userId);
+	
+	/**
+	 * 根据用户组信息，获取作为候选人的待办任务
+	 * 
+	 * @param userId 用户相关信息
+	 * @return
+	 */
+	public List<Task> queryCandidatePengingTasksByGroup(String group);
+	
+	/**
+	 * 根据用户组信息，获取作为候选人的待办任务
+	 * 
+	 * @param userId 用户相关信息
+	 * @return
+	 */
+	public List<Task> queryCandidatePengingTasksByGroup(List<String> groups);
 
 	/**
 	 * 根据用户名信息，获取被分配到的待办任务或者作为候选人之一的待办任务

@@ -53,7 +53,7 @@ public class StartDeployementService {
     public void startProcessInstance(String processDefinitionKey) {
         // 流程定义的key，定义在配置文件中
 //        String processDefinitionKey = "leave";
-//        RuntimeService service = processEngine.getRuntimeService();？
+//        RuntimeService runtimeService = processEngine.getRuntimeService();
         /**
          * 使用流程定义的key启动流程实例，key对应hello.bpmn文件中id的属性值，
          * 使用key值启动，默认是按照最新版本的流程定义启动
@@ -67,7 +67,7 @@ public class StartDeployementService {
     public void startProcessInstance(String processDefinitionKey,Map<String, Object> variables) {
         // 流程定义的key，定义在配置文件中
 //        String processDefinitionKey = "SimpleExclusiveProcess";
-//        RuntimeService service = processEngine.getRuntimeService();
+//        RuntimeService runtimeService = processEngine.getRuntimeService();
 
         /**
          * 使用流程定义的key启动流程实例，key对应hello.bpmn文件中id的属性值，

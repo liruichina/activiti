@@ -30,7 +30,7 @@ public class QueryDemo {
         String processDefinitionKey = "jianguanyi2";
         processDefinitionKey = "leave_houxuan";
         processDefinitionKey = "jianguanyi3";
-        qd.findPersonalTaskList(processDefinitionKey,"user05");
+        qd.findPersonalTaskList(processDefinitionKey,"");
 //        qd.queryFinishedHistoryProcessInstance();
     }
 

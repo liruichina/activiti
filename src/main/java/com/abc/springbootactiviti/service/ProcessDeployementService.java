@@ -7,12 +7,14 @@ import org.activiti.engine.ProcessEngines;
 import org.activiti.engine.TaskService;
 import org.activiti.engine.task.Attachment;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 //import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class ProcessDeployementService {
 
     public static void main(String[] args) {

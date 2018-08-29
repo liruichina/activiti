@@ -39,8 +39,7 @@ public class DeployementProcessDefinitionDemo {
     }
     /**流程引擎（核心对象），默认加载类路径下命名为activiti.cfg.xml*/
     @Autowired
-    private ProcessEngine processEngine;
-    //= ProcessEngines.getDefaultProcessEngine();
+    private ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
     //classpath方式部署流程定义
 //    @Test
     public void deployementProcessDefinition(String name,String bpmnFileName,String pngFileName){
